@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Play } from 'lucide-react';
 import './Hero.css';
+import heroImage from '../../assests/images/HomeBanner.jpg';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -13,14 +14,16 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero">
-      <div 
+      <div
         className="hero-background"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+          // backgroundImage: `url('https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+          // transform: `translateY(${scrollY * 0.5}px)`
+          backgroundImage: `url(${heroImage})`,
           transform: `translateY(${scrollY * 0.5}px)`
         }}
       />
-      
+
       <div className="hero-content">
         <h1 className="hero-title">
           Revolutionary
@@ -29,7 +32,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="hero-description">
-          Transform your coconut processing with our state-of-the-art husk removal machine. 
+          Transform your coconut processing with our state-of-the-art husk removal machine.
           Increase efficiency, reduce costs, and maximize your yield with cutting-edge automation technology.
         </p>
         <div className="hero-buttons">

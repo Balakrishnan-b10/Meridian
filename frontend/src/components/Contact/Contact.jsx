@@ -34,19 +34,19 @@ const Contact = () => {
     {
       icon: <Phone className="contact-icon" />,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "+91 96008 79282",
+      link: "tel:+91 96008 79282"
     },
     {
       icon: <Mail className="contact-icon" />,
       title: "Email Us",
-      content: "sales@cocotech.com",
-      link: "mailto:sales@cocotech.com"
+      content: "sales@meridianmachineworks.com",
+      link: "mailto:sales@meridianmachineworks.com"
     },
     {
       icon: <MapPin className="contact-icon" />,
       title: "Visit Us",
-      content: "123 Industrial Park, Tech City, TC 12345",
+      content: "Coimbatore - 641006",
       link: "#"
     }
   ];
