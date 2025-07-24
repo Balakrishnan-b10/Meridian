@@ -124,3 +124,29 @@
   color: #9ca3af;
   margin: 0;
 }
+
+.footer-social-icons {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4ade80;
+}
+
+.footer {
+  position: relative;
+}
+
+.social-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
