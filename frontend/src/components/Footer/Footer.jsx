@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = () => {
   const footerLinks = {
     products: [
-      { name: "CocoMaster Pro", href: "#" },
+      { name: " Meridian pro", href: "#" },
       { name: "Industrial Series", href: "#" },
       { name: "Enterprise Solutions", href: "#" },
       { name: "Spare Parts", href: "#" }
@@ -33,10 +33,10 @@ const Footer = () => {
               <div className="footer-logo-icon">
                 <Recycle className="footer-logo-svg" />
               </div>
-              <span className="footer-logo-text">CocoTech Industries</span>
+              <span className="footer-logo-text">Meridian Machine Works</span>
             </div>
             <p className="footer-description">
-              Leading manufacturer of coconut processing equipment with over 15 years of innovation and excellence.
+              Leading manufacturer of coconut processing equipment with over 7 years of innovation and excellence.
             </p>
           </div>
           
