@@ -208,4 +208,45 @@
       }
     }
   }
+
+
+  @media (min-width: 640px) {
+    padding: 4rem 3rem;
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .sub-text {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 2.8rem;
+    }
+
+    .advantage-card {
+      h3 {
+        font-size: 1.35rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 6rem 4rem;
+
+    .advantage-grid {
+      gap: 2rem;
+    }
+
+    .advantage-card {
+      padding: 2.5rem 2rem;
+    }
+  }
 }

@@ -86,7 +86,7 @@ const Features = () => {
     {
       icon: <Zap />,
       title: "High-Speed Processing",
-      description: "Process up to 1000 coconuts per hour with our advanced automation technology and precision engineering"
+      description: "Process up to 500 coconuts per hour with our advanced automation technology and precision engineering"
     },
     {
       icon: <Shield />,

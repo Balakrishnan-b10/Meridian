@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Recycle } from 'lucide-react';
 import './Header.css';
+import QuoteModal from '../Quote/QuoteModal';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -38,7 +40,7 @@ const Header = () => {
                 {item}
               </a>
             ))}
-            <button className="cta-button">
+            <button className="cta-button" onClick={() => setIsQuoteOpen(true)}>
               Get Quote
             </button>
           </div>
@@ -68,7 +70,9 @@ const Header = () => {
           </div>
         )}
       </div>
+      <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
     </nav>
+    
   );
 };
 
