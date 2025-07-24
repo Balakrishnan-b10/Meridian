@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            &copy; 2025 CocoTech Industries. All rights reserved.
+            &copy; 2025 Meridian Machine Works. All rights reserved.
           </p>
           <div className="footer-social-icons">
             <a href="nksmarty702@gmail.com" className="social-icon" aria-label="Mail"><Mail /></a>
