@@ -26,7 +26,7 @@ const Hero = () => {
 
       <div className="hero-content">
         <h1 className="hero-title">
-          Smart
+          Streamlined 
           <span className="hero-title-gradient">
             Coconut Processing
           </span>
