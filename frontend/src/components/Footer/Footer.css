@@ -49,18 +49,18 @@
 .footer-logo-icon {
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(to right, #16a34a, #15803d);
+  /* background: linear-gradient(to right, #16a34a, #15803d); */
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer-logo-svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: white;
+.logo-icon-img {
+  width: 100px;
+  transition: transform 0.3s ease;
 }
+
 
 .footer-logo-text {
   font-size: 1.25rem;

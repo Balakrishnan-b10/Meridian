@@ -1,6 +1,7 @@
 import React from 'react';
-import { Recycle, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import {  Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import './Footer.css';
+import logo from '../../assests/images/coco1.png';
 
 const Footer = () => {
   const footerLinks = {
@@ -31,7 +32,7 @@ const Footer = () => {
           <div className="footer-brand">
             <div className="footer-logo">
               <div className="footer-logo-icon">
-                <Recycle className="footer-logo-svg" />
+                <img src={logo} alt="Logo" className="logo-icon-img" />
               </div>
               <span className="footer-logo-text">Meridian Machine Works</span>
             </div>

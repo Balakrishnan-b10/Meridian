@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Recycle } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import './Header.css';
 import QuoteModal from '../Quote/QuoteModal';
+import logo from '../../assests/images/coco1.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
         <div className="header-content">
           <div className="header-logo">
             <div className="logo-icon">
-              <Recycle className="logo-icon-svg" />
+              <img src={logo} alt="Logo" className="logo-icon-img" />
             </div>
             <span className={`logo-text ${scrollY > 50 ? 'logo-text-dark' : ''}`}>
               Meridian Machine Works
@@ -72,7 +73,7 @@ const Header = () => {
       </div>
       <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
     </nav>
-    
+
   );
 };
 
