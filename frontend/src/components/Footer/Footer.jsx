@@ -12,6 +12,7 @@ const Footer = () => {
       { name: "Spare Parts", href: "#" }
     ],
     support: [
+      
       { name: "Installation", href: "#" },
       { name: "Maintenance", href: "#" },
       // { name: "Training", href: "#" },

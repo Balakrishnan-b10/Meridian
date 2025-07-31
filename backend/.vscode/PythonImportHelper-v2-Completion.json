@@ -1,0 +1,212 @@
+[
+    {
+        "label": "db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "QuoteRequest",
+        "importPath": "app.schemas.quote",
+        "description": "app.schemas.quote",
+        "isExtraImport": true,
+        "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "QuoteRequest",
+        "importPath": "app.schemas.quote",
+        "description": "app.schemas.quote",
+        "isExtraImport": true,
+        "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "submit_quote_controller",
+        "importPath": "app.controllers.quote_controller",
+        "description": "app.controllers.quote_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.quote_controller",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MONGO_URI",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_NAME",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "quote",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "submit_quote_controller",
+        "kind": 2,
+        "importPath": "app.controllers.quote_controller",
+        "description": "app.controllers.quote_controller",
+        "peekOfCode": "def submit_quote_controller(quote: QuoteRequest):\n    db.quotes.insert_one(quote.dict())\n    return {\"message\": \"Quote submitted successfully\"}",
+        "detail": "app.controllers.quote_controller",
+        "documentation": {}
+    },
+    {
+        "label": "submit_quote",
+        "kind": 2,
+        "importPath": "app.routes.quote",
+        "description": "app.routes.quote",
+        "peekOfCode": "def submit_quote(quote: QuoteRequest):\n    return submit_quote_controller(quote)",
+        "detail": "app.routes.quote",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routes.quote",
+        "description": "app.routes.quote",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/quote\")\ndef submit_quote(quote: QuoteRequest):\n    return submit_quote_controller(quote)",
+        "detail": "app.routes.quote",
+        "documentation": {}
+    },
+    {
+        "label": "QuoteRequest",
+        "kind": 6,
+        "importPath": "app.schemas.quote",
+        "description": "app.schemas.quote",
+        "peekOfCode": "class QuoteRequest(BaseModel):\n    type: str  # \"individual\" or \"organization\"\n    full_name: str\n    email: EmailStr\n    phone: str\n    organization_name: Optional[str] = None\n    gst_number: Optional[str] = None\n    location: str\n    quantity: int\n    contact_method: str",
+        "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "MONGO_URI",
+        "kind": 5,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "MONGO_URI = os.getenv(\"MONGO_URI\")\nDATABASE_NAME = os.getenv(\"DATABASE_NAME\")",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_NAME",
+        "kind": 5,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "DATABASE_NAME = os.getenv(\"DATABASE_NAME\")",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "client = MongoClient(MONGO_URI)\ndb = client[DATABASE_NAME]",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "db = client[DATABASE_NAME]",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI()\n# Enable CORS for frontend communication\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:3000\"],  # Frontend origin\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Add quote API",
+        "detail": "app.main",
+        "documentation": {}
+    }
+]

@@ -14,6 +14,44 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
     if (!isOpen) return null;
 
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+        type: activeTab,
+        full_name: e.target[0].value,
+        email: e.target[1].value,
+        phone: e.target[2].value,
+        ...(activeTab === 'organization' && {
+            organization_name: e.target[3].value,
+            gst_number: e.target[4].value,
+        }),
+        location: activeTab === 'organization' ? e.target[5].value : e.target[3].value,
+        quantity: Number(
+            activeTab === 'organization' ? e.target[6].value : e.target[4].value
+        ),
+        contact_method: activeTab === 'organization' ? e.target[7].value : e.target[5].value,
+        notes: activeTab === 'organization' ? e.target[8].value : e.target[6].value,
+    };
+
+    try {
+        const res = await fetch("http://localhost:8000/api/quote", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
+
+        const result = await res.json();
+        alert(result.message);
+        onClose();
+    } catch (err) {
+        console.error(err);
+        alert("Failed to submit quote");
+    }
+};
+
     return (
         <div className="quote-modal-overlay">
             <div className="quote-modal">
@@ -39,7 +77,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                         </button>
                     </div>
 
-                    <form className="form-content">
+                    <form className="form-content" onSubmit={handleSubmit}>
                         <input type="text" placeholder="Full Name" required />
                         <input type="email" placeholder="Email Address" required />
                         <input type="text" placeholder="Phone Number" required />
