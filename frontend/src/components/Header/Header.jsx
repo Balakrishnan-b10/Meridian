@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
 import QuoteModal from '../Quote/QuoteModal';
-import logo from '../../assests/images/coco1.png';
+import logo from '../../assets/images/coco1.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

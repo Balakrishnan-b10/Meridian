@@ -1,7 +1,7 @@
 import React from 'react';
 import {  Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import './Footer.css';
-import logo from '../../assests/images/coco1.png';
+import logo from '../../assets/images/coco1.png';
 
 const Footer = () => {
   const footerLinks = {
