@@ -1,26 +1,34 @@
 [
     {
-        "label": "db",
-        "importPath": "app.database",
-        "description": "app.database",
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "app.database",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "QuoteRequest",
-        "importPath": "app.schemas.quote",
-        "description": "app.schemas.quote",
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "app.schemas.quote",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "QuoteRequest",
-        "importPath": "app.schemas.quote",
-        "description": "app.schemas.quote",
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "app.schemas.quote",
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -40,11 +48,131 @@
         "documentation": {}
     },
     {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "app.jwt_utils",
+        "description": "app.jwt_utils",
+        "isExtraImport": true,
+        "detail": "app.jwt_utils",
+        "documentation": {}
+    },
+    {
+        "label": "QuoteRequest",
+        "importPath": "app.schemas.quote",
+        "description": "app.schemas.quote",
+        "isExtraImport": true,
+        "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "QuoteRequest",
+        "importPath": "app.schemas.quote",
+        "description": "app.schemas.quote",
+        "isExtraImport": true,
+        "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "app.schemas.admin_schema",
+        "description": "app.schemas.admin_schema",
+        "isExtraImport": true,
+        "detail": "app.schemas.admin_schema",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "importPath": "app.controllers.admin_controller",
+        "description": "app.controllers.admin_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.admin_controller",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "importPath": "app.controllers.admin_controller",
+        "description": "app.controllers.admin_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.admin_controller",
+        "documentation": {}
+    },
+    {
         "label": "submit_quote_controller",
         "importPath": "app.controllers.quote_controller",
         "description": "app.controllers.quote_controller",
         "isExtraImport": true,
         "detail": "app.controllers.quote_controller",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -72,11 +200,19 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
         "isExtraImport": true,
-        "detail": "dotenv",
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
         "documentation": {}
     },
     {
@@ -86,6 +222,22 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -129,12 +281,74 @@
         "documentation": {}
     },
     {
+        "label": "admin_router",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "app.controllers.admin_controller",
+        "description": "app.controllers.admin_controller",
+        "peekOfCode": "def login_user(user: dict):\n    db_user = db.users.find_one({\"username\": user[\"username\"]})\n    if not db_user or not pwd_context.verify(user[\"password\"], db_user[\"hashed_password\"]):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\"\n        )\n    access_token = create_access_token(data={\"sub\": db_user[\"username\"]})\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\ndef create_user(user: dict):",
+        "detail": "app.controllers.admin_controller",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "app.controllers.admin_controller",
+        "description": "app.controllers.admin_controller",
+        "peekOfCode": "def create_user(user: dict):\n    if db.users.find_one({\"username\": user[\"username\"]}):\n        raise HTTPException(\n            status_code=status.HTTP_400_BAD_REQUEST,\n            detail=\"Username already exists\"\n        )\n    hashed_password = pwd_context.hash(user[\"password\"])\n    db_user = {\"username\": user[\"username\"], \"hashed_password\": hashed_password}\n    db.users.insert_one(db_user)\n    return {\"username\": user[\"username\"]}",
+        "detail": "app.controllers.admin_controller",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "app.controllers.admin_controller",
+        "description": "app.controllers.admin_controller",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef login_user(user: dict):\n    db_user = db.users.find_one({\"username\": user[\"username\"]})\n    if not db_user or not pwd_context.verify(user[\"password\"], db_user[\"hashed_password\"]):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\"\n        )\n    access_token = create_access_token(data={\"sub\": db_user[\"username\"]})\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}",
+        "detail": "app.controllers.admin_controller",
+        "documentation": {}
+    },
+    {
         "label": "submit_quote_controller",
         "kind": 2,
         "importPath": "app.controllers.quote_controller",
         "description": "app.controllers.quote_controller",
         "peekOfCode": "def submit_quote_controller(quote: QuoteRequest):\n    db.quotes.insert_one(quote.dict())\n    return {\"message\": \"Quote submitted successfully\"}",
         "detail": "app.controllers.quote_controller",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app.routes.admin_router",
+        "description": "app.routes.admin_router",
+        "peekOfCode": "def login(username: str = Form(...), password: str = Form(...)):\n    return login_user({\"username\": username, \"password\": password})\n@router.post(\"/users\")\ndef register(username: str = Form(...), password: str = Form(...)):\n    return create_user({\"username\": username, \"password\": password})",
+        "detail": "app.routes.admin_router",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app.routes.admin_router",
+        "description": "app.routes.admin_router",
+        "peekOfCode": "def register(username: str = Form(...), password: str = Form(...)):\n    return create_user({\"username\": username, \"password\": password})",
+        "detail": "app.routes.admin_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routes.admin_router",
+        "description": "app.routes.admin_router",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/login\", response_model=Token)\ndef login(username: str = Form(...), password: str = Form(...)):\n    return login_user({\"username\": username, \"password\": password})\n@router.post(\"/users\")\ndef register(username: str = Form(...), password: str = Form(...)):\n    return create_user({\"username\": username, \"password\": password})",
+        "detail": "app.routes.admin_router",
         "documentation": {}
     },
     {
@@ -156,12 +370,57 @@
         "documentation": {}
     },
     {
+        "label": "UserLogin",
+        "kind": 6,
+        "importPath": "app.schemas.admin_schema",
+        "description": "app.schemas.admin_schema",
+        "peekOfCode": "class UserLogin(BaseModel):\n    username: str\n    password: str\nclass Token(BaseModel):\n    access_token: str\n    token_type: str",
+        "detail": "app.schemas.admin_schema",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "kind": 6,
+        "importPath": "app.schemas.admin_schema",
+        "description": "app.schemas.admin_schema",
+        "peekOfCode": "class Token(BaseModel):\n    access_token: str\n    token_type: str",
+        "detail": "app.schemas.admin_schema",
+        "documentation": {}
+    },
+    {
         "label": "QuoteRequest",
         "kind": 6,
         "importPath": "app.schemas.quote",
         "description": "app.schemas.quote",
         "peekOfCode": "class QuoteRequest(BaseModel):\n    type: str  # \"individual\" or \"organization\"\n    full_name: str\n    email: EmailStr\n    phone: str\n    organization_name: Optional[str] = None\n    gst_number: Optional[str] = None\n    location: str\n    quantity: int\n    contact_method: str",
         "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", \"167c4061855c882442319d19268a2be7ff62f3eaab05518a9bc0881c39dec602\")\nALGORITHM = \"HS256\"\ndef create_access_token(data: dict, expires_delta: timedelta):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "ALGORITHM = \"HS256\"\ndef create_access_token(data: dict, expires_delta: timedelta):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt",
+        "detail": "app.admin",
         "documentation": {}
     },
     {
@@ -201,11 +460,38 @@
         "documentation": {}
     },
     {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "app.jwt_utils",
+        "description": "app.jwt_utils",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes=30)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "detail": "app.jwt_utils",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "app.jwt_utils",
+        "description": "app.jwt_utils",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\")\nALGORITHM = \"HS256\"\ndef create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes=30)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "detail": "app.jwt_utils",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "app.jwt_utils",
+        "description": "app.jwt_utils",
+        "peekOfCode": "ALGORITHM = \"HS256\"\ndef create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes=30)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "detail": "app.jwt_utils",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\n# Enable CORS for frontend communication\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:3000\"],  # Frontend origin\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Add quote API",
+        "peekOfCode": "app = FastAPI()\n# Enable CORS for frontend communication\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:3000\"],  # Adjust if frontend URL changes\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Include routers",
         "detail": "app.main",
         "documentation": {}
     }
