@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Play } from 'lucide-react';
 import './Hero.css';
-import heroImage from '../../assests/images/HomeBanner.jpg';
+import heroImage from '../../assets/images/HomeBanner.jpg';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);

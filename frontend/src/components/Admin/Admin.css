@@ -1,0 +1,208 @@
+.admin-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.admin-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.admin-background::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(20, 83, 45, 0.85), rgba(22, 101, 52, 0.75));
+}
+
+.admin-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .admin-content {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .admin-content {
+    padding: 0 2rem;
+  }
+}
+
+.admin-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  animation: slideUp 0.8s ease-out;
+  background: linear-gradient(to right, #4ade80, #10b981);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .admin-title {
+    font-size: 4.5rem;
+  }
+}
+
+.admin-title-gradient {
+  display: block;
+  background: linear-gradient(to right, #4ade80, #10b981);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+  animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+@media (min-width: 768px) {
+  .admin-description {
+    font-size: 1.5rem;
+  }
+}
+
+.admin-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 28rem;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.admin-input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.admin-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.admin-input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.admin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.admin-button:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.admin-button:active {
+  transform: translateY(0);
+}
+
+.admin-error {
+  color: #f87171;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.admin-forgot-password {
+  display: block;
+  color: #4ade80;
+  font-size: 0.875rem;
+  text-align: right;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.admin-forgot-password:hover {
+  color: #22c55e;
+  text-decoration: underline;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

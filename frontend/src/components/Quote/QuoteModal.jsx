@@ -6,7 +6,7 @@
 
 import React, { useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
-import animationData from '../../assests/lottie/Quote.json';
+import animationData from '../../assets/lottie/Quote.json';
 import '../Quote/QuoteModal.css';
 
 const QuoteModal = ({ isOpen, onClose }) => {
