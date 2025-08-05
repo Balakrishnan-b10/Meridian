@@ -85,18 +85,18 @@ const Features = () => {
   const features = [
     {
       icon: <Zap />,
-      title: "High-Speed Processing",
-      description: "Process up to 500 coconuts per hour with our advanced automation technology and precision engineering"
-    },
-    {
-      icon: <Shield />,
-      title: "Durable Construction",
-      description: "Built with industrial-grade stainless steel SS 304 for years of reliable operation in harsh conditions"
+      title: "Coconut Shell - No Breakage",
+      description: "The machine carefully removes the husk without cracking or damaging the coconut shell."
     },
     {
       icon: <Recycle />,
-      title: "Eco-Friendly Design",
-      description: "Zero waste process that converts husks into valuable coir fiber, maximizing resource utilization"
+      title: "Coconut Fibre - No Damage",
+      description: "The husking process preserves the quality and length of the coconut fibres, making them clean and valuable"
+    },
+    {
+      icon: <Shield />,
+      title: "Durable Accessories",
+      description: "Built with industrial-grade Mild steel and EN8 for years of reliable operation in harsh conditions"
     },
     {
       icon: <Wrench />,
@@ -106,7 +106,7 @@ const Features = () => {
     {
       icon: <Clock />,
       title: "24/7 Operation",
-      description: "Designed for continuous operation with robust components and automated monitoring systems"
+      description: "Designed for continuous operation with robust components."
     },
   
   ];

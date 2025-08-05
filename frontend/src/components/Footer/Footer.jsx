@@ -1,12 +1,12 @@
 import React from 'react';
 import {  Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import './Footer.css';
-import logo from '../../assests/images/Meridian_logo.png';
+import logo from '../../assets/images/Meridian_logo.png';
 
 const Footer = () => {
   const footerLinks = {
     products: [
-      { name: " Meridian pro", href: "#" },
+      { name: " C-MATIK", href: "#" },
       { name: "Industrial Series", href: "#" },
       { name: "Enterprise Solutions", href: "#" },
       { name: "Spare Parts", href: "#" }

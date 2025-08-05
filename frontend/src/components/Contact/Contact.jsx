@@ -40,13 +40,13 @@ const Contact = () => {
     {
       icon: <Mail className="contact-icon" />,
       title: "Email Us",
-      content: "sales@meridianmachineworks.com",
-      link: "mailto:sales@meridianmachineworks.com"
+      content: "leedxelectric@gmail.com",
+      link: "mailto:leedxelectric@gmail.com"
     },
     {
       icon: <MapPin className="contact-icon" />,
       title: "Visit Us",
-      content: "Coimbatore - 641006",
+      content: "SF No : 345/3, Door No : 24/E, Periyar Nagar, Writer thottam, Ganapathy, Coimbatore - 641006.",
       link: "#"
     }
   ];

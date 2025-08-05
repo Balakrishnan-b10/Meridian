@@ -4,28 +4,28 @@ import './Product.css';
 
 const Product = () => {
   const product = {
-    name: "Meridian Pro",
+    name: "C-MATIK",
     image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800",
-    capacity: "500 coconuts/hour",
-    power: "10 HP Motor",
+    capacity: "500 coconuts/Hour*",
+    // power: "1 hp three phase / 2 hp single phase",
     price: "Contact for Pricing",
     features: [
-      "Automated feeding system",
-      "Dual blade technology",
-      "Waste collection unit",
-      "PLC control system",
-      "Touch screen interface",
-      "Remote monitoring capability",
-      "Safety emergency stops",
-      "Stainless steel construction"
+      "Hydraulic Powered",
+      "Advanced Control",
+      "Durable Build",
+      "Flexible Design",
+      "Versatile Husking",
+      "Shell Protection",
+      "Clean Husk Output",
+      "Value Addition"
     ],
     specifications: [
-      { label: "Processing Capacity", value: "500 coconuts/hour" },
-      { label: "Motor Power", value: "10 HP (7.5 kW)" },
-      { label: "Dimensions", value: "3m x 2m x 1.5m" },
-      { label: "Weight", value: "1200 kg" },
-      { label: "Power Supply", value: "230V, 3 Phase" },
-      { label: "Material", value: "SS 304 Grade" }
+      { label: "Processing Capacity", value: "500 Coconuts / Hour*" },
+      { label: "Motor Power", value: "1 hp three phase / 2 hp single phase" },
+      { label: "Dehusking cost", value: "0.01 / per nut" },
+      { label: "Weight", value: "200 kg" },
+      { label: "Power Supply", value: "0.75 unit per hour / 1.5 unit per hour" },
+      { label: "Material", value: "Mild steel and EN8" }
     ]
   };
 
@@ -34,7 +34,7 @@ const Product = () => {
       <div className="product-container">
         <div className="product-header">
           <h2 className="product-title">
-            Our Premium <span className="title-highlight">Coconut Processing Machine</span>
+            Our Premium <span className="title-highlight">Coconut Dehusking Machine</span>
           </h2>
           <p className="product-subtitle">
             State-of-the-art technology designed for maximum efficiency and reliability in coconut husk removal
@@ -63,10 +63,10 @@ const Product = () => {
                 <Zap className="spec-icon" />
                 <span className="spec-value">{product.capacity}</span>
               </div>
-              <div className="spec-item">
+              {/* <div className="spec-item">
                 <Shield className="spec-icon" />
                 <span className="spec-value">{product.power}</span>
-              </div>
+              </div> */}
             </div>
             
             <div className="product-features">

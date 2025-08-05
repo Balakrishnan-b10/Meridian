@@ -80,22 +80,6 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "db",
         "importPath": "app.database",
         "description": "app.database",
@@ -113,10 +97,10 @@
     },
     {
         "label": "create_access_token",
-        "importPath": "app.jwt_utils",
-        "description": "app.jwt_utils",
+        "importPath": "app.admin",
+        "description": "app.admin",
         "isExtraImport": true,
-        "detail": "app.jwt_utils",
+        "detail": "app.admin",
         "documentation": {}
     },
     {
@@ -208,14 +192,6 @@
         "documentation": {}
     },
     {
-        "label": "jwt",
-        "importPath": "jose",
-        "description": "jose",
-        "isExtraImport": true,
-        "detail": "jose",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -293,7 +269,7 @@
         "kind": 2,
         "importPath": "app.controllers.admin_controller",
         "description": "app.controllers.admin_controller",
-        "peekOfCode": "def login_user(user: dict):\n    db_user = db.users.find_one({\"username\": user[\"username\"]})\n    if not db_user or not pwd_context.verify(user[\"password\"], db_user[\"hashed_password\"]):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\"\n        )\n    access_token = create_access_token(data={\"sub\": db_user[\"username\"]})\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\ndef create_user(user: dict):",
+        "peekOfCode": "def login_user(user: dict):\n    db_user = db.admin.find_one({\"username\": user[\"username\"]})  # changed users → admin\n    if not db_user or not pwd_context.verify(user[\"password\"], db_user[\"hashed_password\"]):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\"\n        )\n    access_token = create_access_token(data={\"sub\": db_user[\"username\"]}, expires_delta=timedelta(minutes=30))\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}\ndef create_user(user: dict):",
         "detail": "app.controllers.admin_controller",
         "documentation": {}
     },
@@ -302,7 +278,7 @@
         "kind": 2,
         "importPath": "app.controllers.admin_controller",
         "description": "app.controllers.admin_controller",
-        "peekOfCode": "def create_user(user: dict):\n    if db.users.find_one({\"username\": user[\"username\"]}):\n        raise HTTPException(\n            status_code=status.HTTP_400_BAD_REQUEST,\n            detail=\"Username already exists\"\n        )\n    hashed_password = pwd_context.hash(user[\"password\"])\n    db_user = {\"username\": user[\"username\"], \"hashed_password\": hashed_password}\n    db.users.insert_one(db_user)\n    return {\"username\": user[\"username\"]}",
+        "peekOfCode": "def create_user(user: dict):\n    if db.admin.find_one({\"username\": user[\"username\"]}):  # changed users → admin\n        raise HTTPException(\n            status_code=status.HTTP_400_BAD_REQUEST,\n            detail=\"Username already exists\"\n        )\n    hashed_password = pwd_context.hash(user[\"password\"])\n    db_user = {\"username\": user[\"username\"], \"hashed_password\": hashed_password}\n    db.admin.insert_one(db_user)  # changed users → admin\n    return {\"username\": user[\"username\"]}",
         "detail": "app.controllers.admin_controller",
         "documentation": {}
     },
@@ -311,7 +287,7 @@
         "kind": 5,
         "importPath": "app.controllers.admin_controller",
         "description": "app.controllers.admin_controller",
-        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef login_user(user: dict):\n    db_user = db.users.find_one({\"username\": user[\"username\"]})\n    if not db_user or not pwd_context.verify(user[\"password\"], db_user[\"hashed_password\"]):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\"\n        )\n    access_token = create_access_token(data={\"sub\": db_user[\"username\"]})\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef login_user(user: dict):\n    db_user = db.admin.find_one({\"username\": user[\"username\"]})  # changed users → admin\n    if not db_user or not pwd_context.verify(user[\"password\"], db_user[\"hashed_password\"]):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\"\n        )\n    access_token = create_access_token(data={\"sub\": db_user[\"username\"]}, expires_delta=timedelta(minutes=30))\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}",
         "detail": "app.controllers.admin_controller",
         "documentation": {}
     },
@@ -457,33 +433,6 @@
         "description": "app.database",
         "peekOfCode": "db = client[DATABASE_NAME]",
         "detail": "app.database",
-        "documentation": {}
-    },
-    {
-        "label": "create_access_token",
-        "kind": 2,
-        "importPath": "app.jwt_utils",
-        "description": "app.jwt_utils",
-        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes=30)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.jwt_utils",
-        "documentation": {}
-    },
-    {
-        "label": "SECRET_KEY",
-        "kind": 5,
-        "importPath": "app.jwt_utils",
-        "description": "app.jwt_utils",
-        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\")\nALGORITHM = \"HS256\"\ndef create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes=30)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.jwt_utils",
-        "documentation": {}
-    },
-    {
-        "label": "ALGORITHM",
-        "kind": 5,
-        "importPath": "app.jwt_utils",
-        "description": "app.jwt_utils",
-        "peekOfCode": "ALGORITHM = \"HS256\"\ndef create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes=30)):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + expires_delta\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
-        "detail": "app.jwt_utils",
         "documentation": {}
     },
     {

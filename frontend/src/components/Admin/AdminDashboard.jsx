@@ -21,7 +21,7 @@ function AdminDashboard() {
     const fetchDashboard = async () => {
       const token = localStorage.getItem('token');
       if (!token) {
-        navigate('/admin/login');
+        navigate('/admin');
         return;
       }
       try {
@@ -34,7 +34,7 @@ function AdminDashboard() {
       } catch (err) {
         setError('Failed to load dashboard. Please log in again.');
         localStorage.removeItem('token');
-        navigate('/admin/login');
+        navigate('/admin/dashboard');
       }
     };
     fetchDashboard();
@@ -76,7 +76,7 @@ function AdminDashboard() {
           <button
             onClick={() => {
               localStorage.removeItem('token');
-              navigate('/admin/login');
+              navigate('/admin');
             }}
             className="admin-button mt-6"
           >
