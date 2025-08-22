@@ -40,6 +40,14 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -96,6 +104,14 @@
         "documentation": {}
     },
     {
+        "label": "db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
         "label": "create_access_token",
         "importPath": "app.admin",
         "description": "app.admin",
@@ -104,6 +120,30 @@
         "documentation": {}
     },
     {
+        "label": "ContactRequest",
+        "importPath": "app.schemas.contact",
+        "description": "app.schemas.contact",
+        "isExtraImport": true,
+        "detail": "app.schemas.contact",
+        "documentation": {}
+    },
+    {
+        "label": "ContactRequest",
+        "importPath": "app.schemas.contact",
+        "description": "app.schemas.contact",
+        "isExtraImport": true,
+        "detail": "app.schemas.contact",
+        "documentation": {}
+    },
+    {
+        "label": "send_contact_notification",
+        "importPath": "app.utils.contact.email_service",
+        "description": "app.utils.contact.email_service",
+        "isExtraImport": true,
+        "detail": "app.utils.contact.email_service",
+        "documentation": {}
+    },
+    {
         "label": "QuoteRequest",
         "importPath": "app.schemas.quote",
         "description": "app.schemas.quote",
@@ -117,6 +157,14 @@
         "description": "app.schemas.quote",
         "isExtraImport": true,
         "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "send_admin_notification",
+        "importPath": "app.utils.email_service",
+        "description": "app.utils.email_service",
+        "isExtraImport": true,
+        "detail": "app.utils.email_service",
         "documentation": {}
     },
     {
@@ -141,6 +189,14 @@
         "description": "app.controllers.admin_controller",
         "isExtraImport": true,
         "detail": "app.controllers.admin_controller",
+        "documentation": {}
+    },
+    {
+        "label": "submit_contact_controller",
+        "importPath": "app.controllers.contact_controller",
+        "description": "app.controllers.contact_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.contact_controller",
         "documentation": {}
     },
     {
@@ -176,6 +232,22 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -184,11 +256,68 @@
         "documentation": {}
     },
     {
-        "label": "jwt",
-        "importPath": "jose",
-        "description": "jose",
+        "label": "sib_api_v3_sdk",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "jose",
+        "importPath": "sib_api_v3_sdk",
+        "description": "sib_api_v3_sdk",
+        "detail": "sib_api_v3_sdk",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "sib_api_v3_sdk.rest",
+        "description": "sib_api_v3_sdk.rest",
+        "isExtraImport": true,
+        "detail": "sib_api_v3_sdk.rest",
+        "documentation": {}
+    },
+    {
+        "label": "ApiException",
+        "importPath": "sib_api_v3_sdk.rest",
+        "description": "sib_api_v3_sdk.rest",
+        "isExtraImport": true,
+        "detail": "sib_api_v3_sdk.rest",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -201,19 +330,11 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
         "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
+        "detail": "jose",
         "documentation": {}
     },
     {
@@ -265,6 +386,22 @@
         "documentation": {}
     },
     {
+        "label": "quote",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
         "label": "login_user",
         "kind": 2,
         "importPath": "app.controllers.admin_controller",
@@ -292,11 +429,20 @@
         "documentation": {}
     },
     {
+        "label": "submit_contact_controller",
+        "kind": 2,
+        "importPath": "app.controllers.contact_controller",
+        "description": "app.controllers.contact_controller",
+        "peekOfCode": "def submit_contact_controller(contact: ContactRequest):\n    # Save contact form in DB\n    db.contacts.insert_one(contact.dict())\n    # Send email notification to admin\n    send_contact_notification(contact)\n    return {\"message\": \"Contact form submitted successfully\"}",
+        "detail": "app.controllers.contact_controller",
+        "documentation": {}
+    },
+    {
         "label": "submit_quote_controller",
         "kind": 2,
         "importPath": "app.controllers.quote_controller",
         "description": "app.controllers.quote_controller",
-        "peekOfCode": "def submit_quote_controller(quote: QuoteRequest):\n    db.quotes.insert_one(quote.dict())\n    return {\"message\": \"Quote submitted successfully\"}",
+        "peekOfCode": "def submit_quote_controller(quote: QuoteRequest):\n    db.quotes.insert_one(quote.dict())  # Save to DB\n    send_admin_notification(quote)      # Send email to admin\n    return {\"message\": \"Quote submitted successfully\"}",
         "detail": "app.controllers.quote_controller",
         "documentation": {}
     },
@@ -325,6 +471,24 @@
         "description": "app.routes.admin_router",
         "peekOfCode": "router = APIRouter()\n@router.post(\"/login\", response_model=Token)\ndef login(username: str = Form(...), password: str = Form(...)):\n    return login_user({\"username\": username, \"password\": password})\n@router.post(\"/users\")\ndef register(username: str = Form(...), password: str = Form(...)):\n    return create_user({\"username\": username, \"password\": password})",
         "detail": "app.routes.admin_router",
+        "documentation": {}
+    },
+    {
+        "label": "submit_contact",
+        "kind": 2,
+        "importPath": "app.routes.contact",
+        "description": "app.routes.contact",
+        "peekOfCode": "def submit_contact(contact: ContactRequest):\n    return submit_contact_controller(contact)",
+        "detail": "app.routes.contact",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routes.contact",
+        "description": "app.routes.contact",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/contact\")\ndef submit_contact(contact: ContactRequest):\n    return submit_contact_controller(contact)",
+        "detail": "app.routes.contact",
         "documentation": {}
     },
     {
@@ -364,12 +528,39 @@
         "documentation": {}
     },
     {
+        "label": "ContactRequest",
+        "kind": 6,
+        "importPath": "app.schemas.contact",
+        "description": "app.schemas.contact",
+        "peekOfCode": "class ContactRequest(BaseModel):\n    name: str\n    email: EmailStr\n    company: str | None = None\n    message: str",
+        "detail": "app.schemas.contact",
+        "documentation": {}
+    },
+    {
         "label": "QuoteRequest",
         "kind": 6,
         "importPath": "app.schemas.quote",
         "description": "app.schemas.quote",
         "peekOfCode": "class QuoteRequest(BaseModel):\n    type: str  # \"individual\" or \"organization\"\n    full_name: str\n    email: EmailStr\n    phone: str\n    organization_name: Optional[str] = None\n    gst_number: Optional[str] = None\n    location: str\n    quantity: int\n    contact_method: str",
         "detail": "app.schemas.quote",
+        "documentation": {}
+    },
+    {
+        "label": "send_contact_notification",
+        "kind": 2,
+        "importPath": "app.utils.contact.email_service",
+        "description": "app.utils.contact.email_service",
+        "peekOfCode": "def send_contact_notification(contact_data):\n    configuration = sib_api_v3_sdk.Configuration()\n    configuration.api_key['api-key'] = os.getenv(\"BREVO_API_KEY\")\n    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(\n        sib_api_v3_sdk.ApiClient(configuration)\n    )\n    subject = f\"New Contact Form Submission from {contact_data.name}\"\n    html_content = f\"\"\"\n    <h3>New Contact Message</h3>\n    <ul>",
+        "detail": "app.utils.contact.email_service",
+        "documentation": {}
+    },
+    {
+        "label": "send_admin_notification",
+        "kind": 2,
+        "importPath": "app.utils.email_service",
+        "description": "app.utils.email_service",
+        "peekOfCode": "def send_admin_notification(quote_data):\n    configuration = sib_api_v3_sdk.Configuration()\n    configuration.api_key['api-key'] = os.getenv(\"BREVO_API_KEY\")\n    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))\n    subject = f\"New Quote Request from {quote_data.full_name}\"\n    html_content = f\"\"\"\n    <h3>New Quote Request Details</h3>\n    <ul>\n        <li><strong>Name:</strong> {quote_data.full_name}</li>\n        <li><strong>Email:</strong> {quote_data.email}</li>",
+        "detail": "app.utils.email_service",
         "documentation": {}
     },
     {
@@ -440,7 +631,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\n# Enable CORS for frontend communication\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:3000\"],  # Adjust if frontend URL changes\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Include routers",
+        "peekOfCode": "app = FastAPI()\n# Enable CORS for frontend communication\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:3000\"],  # Adjust if frontend URL changes\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\nload_dotenv()",
         "detail": "app.main",
         "documentation": {}
     }

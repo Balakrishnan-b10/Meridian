@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import AdminLogin from './components/Admin/AdminLogin'; // Fixed typo: Adminlogin -> AdminLogin
 import AdminDashboard from './components/Admin/AdminDashboard';
 import './styles/global.css';
+import Industrial_Series from './pages/Industrial_Series/Industrial_Series';
 
 function MainLayout({ children }) {
   return (
@@ -23,6 +24,14 @@ function MainLayout({ children }) {
 }
 
 function AdminLayout({ children }) {
+  return (
+    <div className="min-h-screen bg-white">
+      {children}
+    </div>
+  );
+}
+
+function IndustryLayout({ children }) {
   return (
     <div className="min-h-screen bg-white">
       {children}
@@ -61,6 +70,15 @@ function App() {
             <AdminLayout>
               <AdminDashboard />
             </AdminLayout>
+          }
+        />
+
+        <Route
+          path="/products"
+          element={
+            <IndustryLayout>
+              <Industrial_Series />
+            </IndustryLayout>
           }
         />
       </Routes>

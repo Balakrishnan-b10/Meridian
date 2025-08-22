@@ -7,7 +7,7 @@ const Footer = () => {
   const footerLinks = {
     products: [
       { name: " C-MATIK", href: "#" },
-      { name: "Industrial Series", href: "#" },
+      { name: "Industrial Series", href: "products" },
       { name: "Enterprise Solutions", href: "#" },
       { name: "Spare Parts", href: "#" }
     ],
