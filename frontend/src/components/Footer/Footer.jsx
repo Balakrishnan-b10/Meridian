@@ -6,7 +6,7 @@ import logo from '../../assets/images/Meridian_logo.png';
 const Footer = () => {
   const footerLinks = {
     products: [
-      { name: " C-MATIK", href: "#" },
+      { name: " C-MATIK", href: "#product" },
       { name: "Industrial Series", href: "products" },
       { name: "Enterprise Solutions", href: "#" },
       { name: "Spare Parts", href: "#" }
@@ -21,7 +21,7 @@ const Footer = () => {
     company: [
       { name: "About Us", href: "#about" },
       // { name: "Careers", href: "#" },
-      { name: "News", href: "#" },
+      { name: "Features", href: "#features" },
       { name: "Contact", href: "#contact" }
     ]
   };
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-links-group">
-              <h4 className="footer-links-title">Company</h4>
+              <h4 className="footer-links-title">Quick Links</h4>
               <ul className="footer-links-list">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
