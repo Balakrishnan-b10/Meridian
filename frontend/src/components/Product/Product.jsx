@@ -1,13 +1,15 @@
-import React from 'react';
-import { CheckCircle, Zap, Shield, Award } from 'lucide-react';
+import React, { useState } from 'react';
+import { CheckCircle, Zap, Award } from 'lucide-react';
 import './Product.css';
+import QuoteModal from '../Quote/QuoteModal'; 
 
 const Product = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+
   const product = {
     name: "C-MATIK",
     image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800",
     capacity: "500 coconuts/Hour*",
-    // power: "1 hp three phase / 2 hp single phase",
     price: "Contact for Pricing",
     features: [
       "Hydraulic Powered",
@@ -63,10 +65,6 @@ const Product = () => {
                 <Zap className="spec-icon" />
                 <span className="spec-value">{product.capacity}</span>
               </div>
-              {/* <div className="spec-item">
-                <Shield className="spec-icon" />
-                <span className="spec-value">{product.power}</span>
-              </div> */}
             </div>
             
             <div className="product-features">
@@ -95,13 +93,21 @@ const Product = () => {
             
             <div className="product-actions">
               <div className="product-price">{product.price}</div>
-              <button className="product-cta">
+              <button 
+                className="product-cta"
+                onClick={() => setIsModalOpen(true)} 
+              >
                 Request Quote
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      <QuoteModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
