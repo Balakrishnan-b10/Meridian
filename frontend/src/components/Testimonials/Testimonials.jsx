@@ -12,7 +12,7 @@ const Testimonials = () => {
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150"
     },
     {
-      name: "Vikashini Lakshmanan",
+      name: "Kaviyarasan Chinnadurai",
       company: "Kavi Coir Exports",
       text: "Outstanding quality and reliability. The automated features have significantly reduced our labor costs while maintaining consistent output quality.",
       rating: 5,

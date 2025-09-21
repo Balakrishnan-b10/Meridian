@@ -35,7 +35,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
     };
 
     try {
-        const res = await fetch("http://localhost:8000/api/quote", {
+        const res = await fetch("https://meridian-backend-ifmj.onrender.com/api/quote", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -28,7 +28,7 @@ const Contact = () => {
     setStatus(null);
 
     try {
-      const response = await fetch("http://localhost:8000/api/contact", {
+      const response = await fetch("https://meridian-backend-ifmj.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,8 +70,8 @@ const Contact = () => {
     {
       icon: <Mail className="contact-icon" />,
       title: "Email Us",
-      content: "leedxelectric@gmail.com",
-      link: "mailto:leedxelectric@gmail.com"
+      content: "cmatic@meridianmachineworks.com",
+      link: "mailto:cmatic@meridianmachineworks.com"
     },
     {
       icon: <MapPin className="contact-icon" />,
